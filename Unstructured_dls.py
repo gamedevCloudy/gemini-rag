@@ -18,7 +18,8 @@ class UnstructuredDataLoader:
         use across different environments without needing to hard-code the absolute path.
         """
         # Correctly determine the script's directory for consistent relative path resolution.
-        self.base_path = os.path.join(os.path.dirname(__file__), 'Unstructured_data')
+        # self.base_path = os.path.join(os.path.dirname(__file__), 'Unstructured_data')
+        self.base_path = os.path.dirname(__file__)
 
     def read_file(self, path):
         """
